@@ -3,6 +3,10 @@ import "./App.css";
 
 const BottomRow = () => {
   const [currentQtr, changeQtr] = useState(1);
+  if (currentQtr > 4) {
+    return changeQtr(1);
+  }
+  
   return (
     <div className="bottomRow">
       <div className="down">
